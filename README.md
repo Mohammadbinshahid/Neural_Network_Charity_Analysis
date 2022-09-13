@@ -17,3 +17,23 @@ We use the following steps for analysis:
 - Encoding categorical variables, spliting into training and testing datasets and standardization have been applied to the features
 
 ### Compiling, training and evaluating the model
+
+The deep learning model is made of the following hidden nodes and features:-
+
+Hidden Nodes Layer 1 = 80
+Hidden Nodes Layer 2 = 30
+Number of Input features = 43
+
+To speed up the training process, we are using the activation function ReLU for the hidden layers. As our output is a binary classification, Sigmoid is used on the output layer.
+
+This model acheived 72.7% accuracy with several attempts to incraese the accuracy. The model outcome is under 75%, hence it is not satifactory to predict the outcome of charity donations. We made the following attempts to increase accuracy:
+
+- Increasing the number of hidden nodes in layer 1 (3 X number of input features)
+- Increasing the number of hidden layers to include a 3rd
+- Changing the activation functions: tried linear, tanh, sigmoid for a combination of hidden layers and output layer but none of them seemed to improve the model's   performance. 
+
+## Summary:
+The deep learning neural network model did not achieve the target of 75%. The target level was already set at an average level, hence we can conclude that the model is not outperforming. 
+
+There could be a number of potential reasons for this result, such as using an incorrect number of neurons and layers, dropping columns that may have been useful to the model and vice versa, or failing to identify the best activation function to use.
+
